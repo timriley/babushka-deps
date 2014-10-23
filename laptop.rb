@@ -7,4 +7,7 @@ end
 
 dep "workstation" do
   requires "personal dotfiles"
+
+  # Packages
+  requires "wget.managed"
 end
