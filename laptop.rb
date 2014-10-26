@@ -2,10 +2,10 @@ dep "laptop" do
   # Build the standard Icelab environment
   requires "icelab:workstation"
 
-  requires "workstation"
+  requires "personal"
 end
 
-dep "workstation" do
+dep "personal" do
   requires "personal dotfiles"
 
   # Packages
