@@ -17,6 +17,7 @@ dep "personal" do
   requires "cloak"
   requires "doxie"
   requires "firefox"
+  requires "firefoxdeveloperedition"
   requires "fluid"
   requires "flux"
   requires "gfxcardstatus"

@@ -5,6 +5,7 @@ cask "charles"
 cask "cloak"
 cask "doxie"
 cask "firefox"
+dep  "firefoxdeveloperedition", :template => "icelab:cask" do requires "icelab:homebrew tap".with "caskroom/versions" end
 cask "fluid"
 cask "flux"
 cask "gfxcardstatus"
