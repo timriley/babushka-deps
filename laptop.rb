@@ -22,6 +22,7 @@ dep "personal" do
   requires "flux"
   requires "gfxcardstatus"
   requires "gitx-rowanj"
+  requires "glueprint"
   requires "google-chrome"
   requires "hazel"
   requires "imageoptim"
