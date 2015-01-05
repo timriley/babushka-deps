@@ -44,6 +44,26 @@ subl "Sublime-Wrap-Plus.subl_package" do
   source "https://github.com/ehuss/Sublime-Wrap-Plus"
 end
 
+dep "SublimeGit" do
+  met? {
+    "~/Library/Application Support/Sublime Text 3/Packages/SublimeGit".p.exists?
+  }
+
+  meet {
+    target_dir = "~/Library/Application Support/Sublime Text 3/Packages/SublimeGit".p
+
+    target_dir.mkdir
+
+    Babushka::Resource.extract("https://release.sublimegit.net/SublimeGit.zip") do |archive|
+      Dir.glob("*").each do |entry|
+        target_path = target_dir / entry
+
+        entry.p.copy target_path
+      end
+    end
+  }
+end
+
 subl "SublimeLinter.subl_package" do
   source "https://github.com/SublimeLinter/SublimeLinter3"
 end
