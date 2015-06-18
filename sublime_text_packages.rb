@@ -40,6 +40,10 @@ subl "SCSS.subl_package" do
   source "https://github.com/danro/SCSS-sublime"
 end
 
+subl "Sublime-HTMLPrettify.subl_package" do
+  source "https://github.com/victorporof/Sublime-HTMLPrettify"
+end
+
 subl "Sublime-Wrap-Plus.subl_package" do
   source "https://github.com/ehuss/Sublime-Wrap-Plus"
 end

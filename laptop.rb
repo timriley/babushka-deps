@@ -59,6 +59,7 @@ dep "personal" do
   requires "Ruby-Slim.subl_package"
   requires "SCSS.subl_package"
   requires "SublimeGit"
+  requires "Sublime-HTMLPrettify.subl_package"
   requires "Sublime-Wrap-Plus.subl_package"
   requires "SublimeLinter.subl_package"
   requires "SublimeLinter-jshint.subl_package"
