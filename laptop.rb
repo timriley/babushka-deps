@@ -12,6 +12,7 @@ dep "personal" do
   requires "wget.managed"
 
   # Apps
+  requires "atom"
   requires "caffeine"
   requires "charles"
   requires "cloak"

@@ -1,5 +1,6 @@
 def cask(name); dep name, :template => "icelab:cask"; end # Avoid repitition below
 
+cask "atom"
 cask "caffeine"
 cask "charles"
 cask "cloak"
