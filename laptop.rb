@@ -47,6 +47,9 @@ dep "personal" do
   requires "virtualbox"
   requires "vlc"
 
+  # LaunchBar actions
+  requires "Caffeinate.lbaction"
+
   # Sublime Text 3 packages
   requires "AdvancedNewFile.subl_package"
   requires "CodeFormatter.subl_package"
