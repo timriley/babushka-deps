@@ -49,6 +49,7 @@ dep "personal" do
 
   # LaunchBar actions
   requires "Caffeinate.lbaction"
+  requires "Create New Swift Playground.lbaction"
 
   # Sublime Text 3 packages
   requires "AdvancedNewFile.subl_package"
