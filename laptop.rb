@@ -34,7 +34,6 @@ dep "personal" do
   requires "licecap"
   requires "mailplane"
   requires "openemu"
-  requires "rdio"
   requires "reveal"
   requires "slack"
   requires "skype"
