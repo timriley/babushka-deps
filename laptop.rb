@@ -12,6 +12,7 @@ dep "personal" do
   requires "os x configured"
 
   # Packages
+  requires "watchman.managed"
   requires "wget.managed"
 
   # Apps
@@ -73,6 +74,10 @@ dep "personal" do
   requires "Theme - Soda.subl_package"
   requires "TomDoc.subl_package"
   requires "TrailingSpaces.subl_package"
+
+  # Development
+  requires "iojs 2.3.4"
+  requires "react-native-cli.npm"
 end
 
 dep "os x configured" do
