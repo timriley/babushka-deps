@@ -16,6 +16,10 @@ subl "ColorPicker.subl_package" do
   source "https://github.com/weslly/ColorPicker"
 end
 
+subl "Docker.subl_package" do
+  source "https://github.com/asbjornenge/Docker.tmbundle"
+end
+
 subl "GitGutter.subl_package" do
   source "https://github.com/jisaacks/GitGutter"
 end

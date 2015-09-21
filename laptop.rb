@@ -59,6 +59,7 @@ dep "personal" do
   requires "CodeFormatter.subl_package"
   requires "CoffeeScript.subl_package"
   requires "ColorPicker.subl_package"
+  requires "Docker.subl_package"
   requires "GitGutter.subl_package"
   requires "JSX.subl_package"
   requires "MarkdownEditing.subl_package"
