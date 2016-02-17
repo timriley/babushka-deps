@@ -62,6 +62,7 @@ dep "personal" do
   requires "ColorPicker.subl_package"
   requires "Docker.subl_package"
   requires "GitGutter.subl_package"
+  requires "GotoWindow.subl_package"
   requires "JSX.subl_package"
   requires "MarkdownEditing.subl_package"
   requires "PrettyJson.subl_package"

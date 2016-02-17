@@ -24,6 +24,10 @@ subl "GitGutter.subl_package" do
   source "https://github.com/jisaacks/GitGutter"
 end
 
+subl "GotoWindow.subl_package" do
+  source "https://github.com/ccampbell/sublime-goto-window.git"
+end
+
 subl "JSX.subl_package" do
   source "https://github.com/masondesu/Sublime-JSX"
 end
