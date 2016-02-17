@@ -12,6 +12,7 @@ dep "personal" do
   requires "os x configured"
 
   # Packages
+  requires "ngrok"
   requires "watchman.managed"
   requires "wget.managed"
 
