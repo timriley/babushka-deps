@@ -88,6 +88,10 @@ subl "SublimeLinter-ruby.subl_package" do
   source "https://github.com/SublimeLinter/SublimeLinter-ruby"
 end
 
+subl "SublimeTableEditor.subl_package" do
+  source "https://github.com/vkocubinsky/SublimeTableEditor"
+end
+
 subl "Theme - Soda.subl_package" do
   source "https://github.com/buymeasoda/soda-theme"
 end
