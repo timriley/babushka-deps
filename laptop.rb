@@ -12,7 +12,23 @@ dep "personal" do
   requires "os x configured"
 
   # Packages
+  requires "ack.managed"
+  requires "awscli.managed"
+  requires "carthage.managed"
+  requires "cloc.managed"
+  requires "csvkit.pip"
+  requires "ctags.managed"
+  requires "fish.managed"
+  requires "git-subrepo.managed"
+  requires "httpie.managed"
+  requires "hub.managed"
+  requires "jq.managed"
+  requires "libdvdcss.managed"
+  requires "ne.managed"
   requires "ngrok"
+  requires "pygments.py"
+  requires "s3cmd.managed"
+  requires "switchaudio-osx.managed"
   requires "watchman.managed"
   requires "wget.managed"
 
@@ -86,9 +102,12 @@ dep "personal" do
   requires "TomDoc.subl_package"
   requires "TrailingSpaces.subl_package"
 
-  # Development
-  requires "iojs 2.3.4"
+  # Development tools
   requires "react-native-cli.npm"
+  requires "packer.managed"
+
+  # Use fish
+  requires "icelab:shell".with :shell_name => "fish"
 end
 
 dep "os x configured" do
