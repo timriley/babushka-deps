@@ -79,6 +79,7 @@ dep "personal" do
   requires "SublimeLinter-jshint.subl_package"
   requires "SublimeLinter-ruby.subl_package"
   requires "SublimeTableEditor.subl_package"
+  requires "sublime-fish-shell.subl_package"
   requires "Theme - Soda.subl_package"
   requires "TomDoc.subl_package"
   requires "TrailingSpaces.subl_package"

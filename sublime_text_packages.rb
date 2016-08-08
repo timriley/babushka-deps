@@ -104,6 +104,10 @@ subl "SublimeTableEditor.subl_package" do
   source "https://github.com/vkocubinsky/SublimeTableEditor"
 end
 
+subl "sublime-fish-shell.subl_package" do
+  source "https://github.com/toru-hamaguchi/sublime-fish-shell"
+end
+
 subl "Theme - Soda.subl_package" do
   source "https://github.com/buymeasoda/soda-theme"
 end
