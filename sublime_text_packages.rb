@@ -8,6 +8,10 @@ subl "ApplySyntax.subl_package" do
   source "https://github.com/facelessuser/ApplySyntax"
 end
 
+subl "BetterFindBuffer.subl_package" do
+  source "https://github.com/aziz/BetterFindBuffer"
+end
+
 subl "Better Ruby.subl_package" do
   source "https://github.com/fnando/better-ruby-for-sublime-text"
 end

@@ -59,6 +59,7 @@ dep "personal" do
   # Sublime Text 3 packages
   requires "AdvancedNewFile.subl_package"
   requires "ApplySyntax.subl_package"
+  requires "BetterFindBuffer.subl_package"
   requires "Better Ruby.subl_package"
   requires "CodeFormatter.subl_package"
   requires "CoffeeScript.subl_package"
