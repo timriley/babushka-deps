@@ -4,6 +4,14 @@ subl "AdvancedNewFile.subl_package" do
   source "https://github.com/skuroda/Sublime-AdvancedNewFile"
 end
 
+subl "ApplySyntax.subl_package" do
+  source "https://github.com/facelessuser/ApplySyntax"
+end
+
+subl "Better Ruby.subl_package" do
+  source "https://github.com/fnando/better-ruby-for-sublime-text"
+end
+
 subl "CodeFormatter.subl_package" do
   source "https://github.com/akalongman/sublimetext-codeformatter"
 end
