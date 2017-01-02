@@ -8,12 +8,17 @@ dep "cloc.managed"
 dep "ctags.managed"
 dep "fish.managed"
 dep "git-subrepo.managed"
+dep "graphviz.managed" do
+  provides "dot"
+end
 dep "httpie.managed" do
   provides "http"
 end
 dep "hub.managed"
 dep "jq.managed"
-dep "libdvdcss.managed"
+dep "libdvdcss.managed" do
+  provides nil
+end
 dep "llvm35.managed" do # for building rbx with ruby-build
   requires "icelab:homebrew tap".with "homebrew/versions"
   provides "llvm-as-3.5"

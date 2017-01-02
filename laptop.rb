@@ -20,6 +20,7 @@ dep "personal" do
   requires "ctags.managed"
   requires "fish.managed"
   requires "git-subrepo.managed"
+  requires "graphviz.managed"
   requires "httpie.managed"
   requires "hub.managed"
   requires "jq.managed"
