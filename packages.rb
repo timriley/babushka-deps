@@ -23,6 +23,7 @@ dep "llvm35.managed" do # for building rbx with ruby-build
   requires "icelab:homebrew tap".with "homebrew/versions"
   provides "llvm-as-3.5"
 end
+dep "mas.managed"
 dep "ne.managed"
 
 dep "ngrok" do

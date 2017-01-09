@@ -25,6 +25,7 @@ dep "personal" do
   requires "hub.managed"
   requires "jq.managed"
   requires "libdvdcss.managed"
+  requires "mas.managed"
   requires "ne.managed"
   requires "ngrok"
   requires "pygments.py"
