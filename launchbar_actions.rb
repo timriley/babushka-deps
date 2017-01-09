@@ -39,7 +39,3 @@ end
 dep "Caffeinate.lbaction" do
   source "https://dl.dropboxusercontent.com/u/1094926/lbdist/Caffeinate.lbaction"
 end
-
-dep "Create New Swift Playground.lbaction" do
-  source "https://raw.githubusercontent.com/marcomasser/LaunchBarActions/master/Create%20New%20Swift%20Playground%20(Signed).lbaction"
-end
