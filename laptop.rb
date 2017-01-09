@@ -77,6 +77,8 @@ dep "personal" do
   # LaunchBar actions
   requires "Caffeinate.lbaction"
 
+  requires "vscode extensions"
+
   # Sublime Text 3 packages
   requires "AdvancedNewFile.subl_package"
   requires "ApplySyntax.subl_package"
