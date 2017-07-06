@@ -17,9 +17,7 @@ meta :mas do
     }
 
     meet {
-      log_shell "Installing #{name} via Mac App Store" do
-        shell "mas install #{id}"
-      end
+      log_shell "Installing #{name} via Mac App Store", "mas install #{id}"
     }
   }
 end
