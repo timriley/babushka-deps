@@ -43,7 +43,6 @@ dep "personal" do
   requires "dash"
   requires "doxie"
   requires "firefox"
-  requires "firefoxdeveloperedition"
   requires "fluid"
   requires "flux"
   requires "gfxcardstatus"
