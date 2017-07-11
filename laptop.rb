@@ -19,7 +19,6 @@ dep "personal" do
   requires "csvkit.pip"
   requires "ctags.managed"
   requires "fish.managed"
-  requires "git-subrepo.managed"
   requires "graphviz.managed"
   requires "httpie.managed"
   requires "hub.managed"
@@ -80,7 +79,6 @@ dep "personal" do
 
   # Development tools
   requires "react-native-cli.npm"
-  requires "packer.managed"
 
   # Use fish
   requires "icelab:shell".with :shell_name => "fish"

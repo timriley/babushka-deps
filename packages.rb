@@ -7,7 +7,6 @@ dep "carthage.managed"
 dep "cloc.managed"
 dep "ctags.managed"
 dep "fish.managed"
-dep "git-subrepo.managed"
 dep "graphviz.managed" do
   provides "dot"
 end
@@ -50,5 +49,3 @@ dep "wget.managed"
 dep "csvkit.pip" do
   provides "csvformat"
 end
-
-dep "packer.managed"
