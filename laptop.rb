@@ -58,6 +58,7 @@ dep "personal" do
   requires "hazel"
   requires "imageoptim"
   requires "launchbar"
+  requires "muzzle"
   requires "licecap"
   requires "openemu"
   requires "postico"
