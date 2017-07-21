@@ -68,6 +68,7 @@ dep "personal" do
   requires "tokens"
   requires "transmission"
   requires "transmit"
+  requires "vagrant"
   requires "virtualbox"
   requires "visual-studio-code"
   requires "vlc"
