@@ -74,9 +74,10 @@ dep "personal" do
   requires "visual-studio-code"
   requires "vlc"
 
-  # LaunchBar actions
+  # LaunchBar
   requires "Caffeinate.lbaction"
 
+  # Visual Studio Code
   requires "vscode extensions"
 
   # Development tools
