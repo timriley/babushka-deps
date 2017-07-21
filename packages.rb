@@ -55,9 +55,8 @@ dep "mustache.gem"
 dep "rcm.src" do
   # requires "homebrew rcm uninstalled"
   requires_when_unmet "mustache.gem"
-  requires_when_unmet "autoconf"
-  requires_when_unmet "automake"
-  requires_when_unmet "pkg-config"
+  requires_when_unmet "autoconf.managed"
+  requires_when_unmet "automake.managed"
 
   source "https://github.com/thoughtbot/rcm/archive/master.zip"
   provides "rcup"
