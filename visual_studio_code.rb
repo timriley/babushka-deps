@@ -15,36 +15,36 @@ meta :code_extension do
 end
 
 extensions = %w[
-  2gua.rainbow-brackets
-  donjayamanne.githistory
   HookyQR.beautify
   IBM.output-colorizer
-  jakelucas.code-file-nav
-  johob.pico8-vscode
-  keyring.Lua
-  Orta.vscode-danger
-  ow.vscode-subword-navigation
+  PeterJausovec.vscode-docker
   Rubymaniac.vscode-paste-and-indent
-  ryu1kn.annotator
+  donjayamanne.githistory
+  doublefint.pgsql
+  eamodio.gitlens
+  esbenp.prettier-vscode
+  jakelucas.code-file-nav
+  keyring.Lua
+  mdickin.markdown-shortcuts
+  miguel-savignano.ruby-symbols
+  ow.vscode-subword-navigation
+  rebornix.Ruby
   sianglim.slim
   steve8708.Align
   stkb.rewrap
+  timriley.theme-espressosoda
   wmaurer.change-case
 ].each do |ext|
   dep ext, :template => "code_extension"
 end
 
-dep "vscode ruby extension" do
-  requires "icelab:repository".with \
-    :path => "~/.vscode/extensions/vscode-ruby",
-    :url => "https://github.com/ypresto/vscode-ruby.git",
-    :branch => "add-symbols-provider"
-
+dep "rebornix.Ruby", :template => "code_extension" do
   requires "debase.gem"
   requires "rcodetools.gem"
   requires "rubocop.gem"
   requires "ruby-debug-ide.gem"
 end
+
 dep "debase.gem" do provides nil end
 dep "rcodetools.gem" do provides nil end
 dep "rubocop.gem" do provides nil end
@@ -55,5 +55,5 @@ dep "vscode extensions" do
     requires ext
   end
 
-  requires "vscode ruby extension"
+  requires "rebornix.Ruby"
 end
