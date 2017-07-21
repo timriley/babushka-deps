@@ -28,6 +28,7 @@ dep "personal" do
   requires "mas.managed"
   requires "ne.managed"
   requires "ngrok"
+  requires "pgcli.managed"
   requires "pygments.py"
   requires "s3cmd.managed"
   requires "switchaudio-osx.managed"

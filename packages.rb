@@ -38,6 +38,7 @@ dep "ngrok" do
   }
 end
 
+dep "pgcli.managed"
 dep "pygments.py"
 
 dep "s3cmd.managed"
