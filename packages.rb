@@ -1,4 +1,5 @@
 dep "ack.managed"
+dep "ansible.pip"
 dep "awscli.managed" do
   installs "awscli"
   provides "aws"

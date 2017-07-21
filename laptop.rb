@@ -13,6 +13,7 @@ dep "personal" do
 
   # Packages
   requires "ack.managed"
+  requires "ansible.pip"
   requires "awscli.managed"
   requires "carthage.managed"
   requires "cloc.managed"
