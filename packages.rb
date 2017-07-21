@@ -52,6 +52,8 @@ dep "pygments.py"
 # end
 
 dep "mustache.gem"
+dep "autoconf.managed"
+dep "automake.managed"
 dep "rcm.src" do
   # requires "homebrew rcm uninstalled"
   requires_when_unmet "mustache.gem"
