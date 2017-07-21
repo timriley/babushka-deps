@@ -1,4 +1,8 @@
 dep "laptop" do
+  # Install rcm from source first, to get a version with fixes for file names
+  # with spaces (necessary until a version _after_ 1.3.1 is released).
+  requires "rcm.src"
+
   # Build the standard Icelab environment
   requires "icelab:workstation"
 

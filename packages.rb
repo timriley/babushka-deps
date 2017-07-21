@@ -41,6 +41,29 @@ end
 dep "pgcli.managed"
 dep "pygments.py"
 
+# dep "homebrew rcm uninstalled" do
+#   met? {
+#     `brew list rcm` && $?.exitstatus > 0
+#   }
+#
+#   meet {
+#     shell "brew uninstall --force rcm"
+#   }
+# end
+
+dep "mustache.gem"
+dep "rcm.src" do
+  # requires "homebrew rcm uninstalled"
+  requires_when_unmet "mustache.gem"
+
+  source "https://github.com/thoughtbot/rcm/archive/master.zip"
+  provides "rcup"
+
+  preconfigure {
+    shell "./autogen.sh"
+  }
+end
+
 dep "s3cmd.managed"
 dep "switchaudio-osx.managed" do
   provides "SwitchAudioSource"
