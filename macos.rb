@@ -16,10 +16,10 @@ dep "macos dock configured", :template => "plist" do
     "autohide" => true,
     "show-process-indicators" => false
 
-    checks \
-      "orientation" => "left",
-      "autohide" => "1",
-      "show-process-indicators" => "0"
+  checks \
+    "orientation" => "left",
+    "autohide" => "1",
+    "show-process-indicators" => "0"
 
   types Hash.new("string").update(
     "autohide" => "bool",
