@@ -14,6 +14,7 @@ meta :code_extension do
   }
 end
 
+# TODO publish my timriley.theme-espressosoda extension
 extensions = %w[
   HookyQR.beautify
   IBM.output-colorizer
@@ -32,7 +33,6 @@ extensions = %w[
   sianglim.slim
   steve8708.Align
   stkb.rewrap
-  timriley.theme-espressosoda
   wmaurer.change-case
 ].each do |ext|
   dep ext, :template => "code_extension"
