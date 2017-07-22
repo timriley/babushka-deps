@@ -13,4 +13,8 @@ dep "macos dock configured", :template => "plist" do
   values "orientation" => "left", "autohide" => true
   checks "orientation" => "left", "autohide" => "1"
   types Hash.new("string").update("autohide" => "bool")
+
+  after {
+    log_shell "Restarting Dock", %{osascript -e 'quit application "Dock"'}
+  }
 end
