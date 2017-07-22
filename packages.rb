@@ -32,7 +32,7 @@ dep "ngrok" do
   }
 
   meet {
-    Babushka::Resource.extract("https://dl.ngrok.com/ngrok_2.0.19_darwin_amd64.zip") do |archive|
+    Babushka::Resource.extract("https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-darwin-amd64.zip") do |archive|
       "ngrok".p.copy "/usr/local/bin/ngrok"
     end
   }
