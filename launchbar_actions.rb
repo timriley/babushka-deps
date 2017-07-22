@@ -19,5 +19,5 @@ meta :lbaction do
 end
 
 dep "Caffeinate.lbaction" do
-  source "https://dl.dropboxusercontent.com/u/1094926/lbdist/Caffeinate.lbaction"
+  source "https://s3.amazonaws.com/renaghan/lbdist/Caffeinate.lbaction"
 end
