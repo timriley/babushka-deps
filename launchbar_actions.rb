@@ -1,8 +1,12 @@
 meta :lbaction do
   accepts_value_for :source
 
+  def actions_dir
+    "~/Library/Application Support/LaunchBar/Actions"
+  end
+
   def path
-    "~/Library/Application Support/LaunchBar/Actions" / name
+     actions_dir / name
   end
 
   template {
@@ -11,6 +15,8 @@ meta :lbaction do
     }
 
     meet {
+      actions_dir.mkdir
+
       Babushka::Resource.extract(source) do |archive|
         Dir.glob("*.lbaction").first.p.copy path
       end
