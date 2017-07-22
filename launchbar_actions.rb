@@ -2,7 +2,7 @@ meta :lbaction do
   accepts_value_for :source
 
   def actions_dir
-    "~/Library/Application Support/LaunchBar/Actions"
+    "~/Library/Application Support/LaunchBar/Actions".p
   end
 
   def path
