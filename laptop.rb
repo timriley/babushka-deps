@@ -16,8 +16,8 @@ end
 dep "personal" do
   requires "personal dotfiles"
 
-  # OS X configuration
-  requires "os x configured"
+  # macOS configuration
+  requires "macos configured"
 
   # Packages
   requires "ack.managed"
@@ -95,6 +95,7 @@ dep "personal" do
   requires "icelab:shell".with :shell_name => "fish"
 end
 
-dep "os x configured" do
-  requires "screenshots saved in directory".with(:path => "~/Desktop/Screenshots")
+dep "macos configured" do
+  requires "macos screenshots saved in directory".with(:path => "~/Desktop/Screenshots")
+  requires "macos dock configured"
 end
