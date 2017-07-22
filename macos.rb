@@ -10,6 +10,7 @@ end
 
 dep "macos dock configured", :template => "plist" do
   domain "com.apple.dock"
-  values "orientation" => "left", "autohide" => "1"
+  values "orientation" => "left", "autohide" => true
+  checks "orientation" => "left", "autohide" => "1"
   types Hash.new("string").update("autohide" => "bool")
 end
