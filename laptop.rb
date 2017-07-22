@@ -21,11 +21,10 @@ dep "personal" do
 
   # Packages
   requires "ack.managed"
-  requires "ansible.pip"
+  requires "ansible.managed"
   requires "awscli.managed"
   requires "carthage.managed"
   requires "cloc.managed"
-  requires "csvkit.pip"
   requires "ctags.managed"
   requires "fish.managed"
   requires "graphviz.managed"

@@ -1,14 +1,5 @@
-# Tell babushka to look for pip2 instead of pip
-module Babushka
-  class PipHelper
-    def self.package_binary
-      "pip2"
-    end
-  end
-end
-
 dep "ack.managed"
-dep "ansible.pip"
+dep "ansible.managed"
 dep "awscli.managed" do
   installs "awscli"
   provides "aws"
@@ -83,7 +74,3 @@ dep "switchaudio-osx.managed" do
 end
 dep "watchman.managed" # recommended for react-native
 dep "wget.managed"
-
-dep "csvkit.pip" do
-  provides "csvformat"
-end
