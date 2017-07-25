@@ -20,7 +20,7 @@ meta :mas do
       # `mas list` takes a little while to catch up to a freshly installed app.
       # Try a few times.
       5.times do |i|
-        true if installed?
+        return true if installed?
         sleep 3
       end
     }
