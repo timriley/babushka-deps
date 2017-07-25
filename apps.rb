@@ -6,7 +6,7 @@ meta :mas do
   template {
     requires "mas.managed"
 
-    met? {
+    def installed?
       # Extract app names from lines like "413857545 Divvy (1.5.1)"
       installed_ids = `mas list`.split("\n").map { |line|
         match = line.match(/^(?<id>\d+)\s(?<name>.*)?\s\((?<version>[\d\.]+)\)$/)
@@ -14,6 +14,15 @@ meta :mas do
       }
 
       installed_ids.include?(id)
+    end
+
+    met? {
+      # `mas list` takes a little while to catch up to a freshly installed app.
+      # Try a few times.
+      5.times do |i|
+        true if installed?
+        sleep 3
+      end
     }
 
     meet {
