@@ -17,14 +17,16 @@ meta :mas do
     end
 
     met? {
+      installed = false
+
       # `mas list` takes a little while to catch up to a freshly installed app.
       # Try a few times.
       5.times do |i|
-        break true if installed?
+        installed = true and break if installed?
         sleep 1
       end
 
-      false
+      installed
     }
 
     meet {
