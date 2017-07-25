@@ -23,7 +23,7 @@ meta :mas do
       # Try a few times.
       5.times do |i|
         installed = true and break if installed?
-        sleep 1
+        sleep i * 2
       end
 
       installed
