@@ -1,3 +1,8 @@
+dep "macos configured" do
+  requires "macos screenshots saved in directory".with(:path => "~/Desktop/Screenshots")
+  requires "macos dock configured"
+end
+
 dep "macos screenshots saved in directory", :path, :template => "plist" do
   domain "com.apple.screencapture"
   values "location" => path.to_s

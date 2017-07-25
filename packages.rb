@@ -1,3 +1,27 @@
+dep "packages" do
+  requires "ack.managed"
+  requires "ansible.managed"
+  requires "awscli.managed"
+  requires "carthage.managed"
+  requires "cloc.managed"
+  requires "ctags.managed"
+  requires "fish.managed"
+  requires "graphviz.managed"
+  requires "httpie.managed"
+  requires "hub.managed"
+  requires "jq.managed"
+  requires "libdvdcss.managed"
+  requires "mas.managed"
+  requires "ne.managed"
+  requires "ngrok"
+  requires "pgcli.managed"
+  requires "pygments.py"
+  requires "s3cmd.managed"
+  requires "switchaudio-osx.managed"
+  requires "watchman.managed"
+  requires "wget.managed"
+end
+
 dep "ack.managed"
 dep "ansible.managed"
 dep "awscli.managed" do
