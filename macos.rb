@@ -1,6 +1,7 @@
 dep "macos configured" do
   requires "macos screenshots saved in directory".with(:path => "~/Desktop/Screenshots")
   requires "macos dock configured"
+  requires "macos menu bar hidden"
 end
 
 dep "macos screenshots saved in directory", :path, :template => "plist" do
@@ -33,5 +34,17 @@ dep "macos dock configured", :template => "plist" do
 
   after {
     log_shell "Restarting Dock", %{osascript -e 'quit application "Dock"'}
+  }
+end
+
+dep "macos menu bar hidden", :template => "plist" do
+  domain "NSGlobalDomain"
+
+  values "_HIHideMenuBar" => true
+  types  "_HIHideMenuBar" => "bool"
+  checks "_HIHideMenuBar" => "1"
+
+  after {
+    shell! "killall SystemUIServer"
   }
 end
