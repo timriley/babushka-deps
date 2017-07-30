@@ -3,7 +3,7 @@ dep "apps" do
   requires "homebrew cask apps"
 end
 
-dep "mac app store apps"
+dep "mac app store apps" do
   # Mac App Store apps
   requires "Byword.mas"
   requires "DaisyDisk.mas"
@@ -40,7 +40,7 @@ dep "mac app store apps"
   requires "Yoink.mas"
 end
 
-dep "homebrew cask apps"
+dep "homebrew cask apps" do
   requires "1password"
   requires "atext"
   requires "caffeine"
