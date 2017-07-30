@@ -1,3 +1,7 @@
+dep "launchbar actions" do
+  requires "Caffeinate.lbacion"
+end
+
 meta :lbaction do
   accepts_value_for :source
 

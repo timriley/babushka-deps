@@ -18,11 +18,7 @@ dep "personal" do
   requires "macos configured"
   requires "packages"
   requires "apps"
-
-  # LaunchBar
-  requires "Caffeinate.lbaction"
-
-  # Visual Studio Code
+  requires "launchbar actions"
   requires "vscode extensions"
 
   # Development tools
