@@ -71,7 +71,12 @@ meta :plist do
     met? {
       checks_value.all? do |key, value|
         value = value.to_s unless value.is_a?(String) || value.is_a?(Regexp)
-        fetch(domain, key).match(value) rescue false
+
+        if value.is_a?(Regexp)
+          fetch(domain, key).match(value) rescue false
+        else
+          fetch(domain, key) == value
+        end
       end
     }
 

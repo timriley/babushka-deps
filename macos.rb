@@ -1,12 +1,14 @@
 dep "macos configured" do
-  requires "macos screenshots saved in directory".with(:path => "~/Dropbox (Icelab)/Screenshots")
+  requires "macos screenshots saved in directory".with(:path => "'~/Dropbox (Icelab)/Screenshots'")
   requires "macos dock configured"
   requires "macos menu bar hidden"
 end
 
 dep "macos screenshots saved in directory", :path, :template => "plist" do
   domain "com.apple.screencapture"
+
   values "location" => path.to_s
+  checks "location" => path.to_s.sub(/^['"]/, "").sub(/['"]$/, "")
 
   after {
     shell! "mkdir -p #{path.to_s}"
