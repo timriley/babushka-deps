@@ -1,5 +1,5 @@
 dep "macos configured" do
-  requires "macos screenshots saved in directory".with(:path => "~/Desktop/Screenshots")
+  requires "macos screenshots saved in directory".with(:path => "~/Dropbox (Icelab)/Screenshots")
   requires "macos dock configured"
   requires "macos menu bar hidden"
 end
