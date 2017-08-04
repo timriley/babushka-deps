@@ -42,3 +42,18 @@ When this completes, close the shell and open a new one, then continue the insta
 ```
 babushka "laptop"
 ```
+
+## Manual steps
+
+- [ ] [Copy Keychain](https://support.apple.com/kb/PH20120?locale=en_US)
+- [ ] Remap caps lock key to control via Keyboard Preferences
+- [ ] Set "Full Keyboard Access: All Controls" via Keyboard Preferences (Shortcuts tab)
+- [ ] Disable the guest user
+- [ ] Open LaunchBar and step through the first-run screens
+- [ ] Copy `~/Library/Preferences/com.mizage.Divvy.plist`
+- [ ] Allow Divvy to control the computer in Security & Privacy Preferences (Privacy tab, Accessibility section)
+- [ ] Open 1Password and sign in
+- [ ] Open Dropbox and sign in, let it sync
+- [ ] Open Ulysses, enable iCloud, let it sync
+- [ ] Copy `~/src`
+- [ ] Copy `~/.gnupg`
