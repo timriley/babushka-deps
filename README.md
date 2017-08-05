@@ -57,3 +57,4 @@ babushka "laptop"
 - [ ] Open Ulysses, enable iCloud, let it sync
 - [ ] Copy `~/src`
 - [ ] Copy `~/.gnupg`
+- [ ] Copy fonts
