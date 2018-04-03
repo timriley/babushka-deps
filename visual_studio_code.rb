@@ -14,46 +14,50 @@ meta :code_extension do
   }
 end
 
-# TODO publish my timriley.theme-espressosoda extension
 extensions = %w[
-  HookyQR.beautify
-  IBM.output-colorizer
-  PeterJausovec.vscode-docker
-  Rubymaniac.vscode-paste-and-indent
+  brofox86.theme-espresso-soda-light
   donjayamanne.githistory
   doublefint.pgsql
   eamodio.gitlens
   esbenp.prettier-vscode
+  HookyQR.beautify
+  IBM.output-colorizer
   jakelucas.code-file-nav
+  karunamurti.haml
   keyring.Lua
   mdickin.markdown-shortcuts
   miguel-savignano.ruby-symbols
   ow.vscode-subword-navigation
-  rebornix.Ruby
+  PeterJausovec.vscode-docker
   sianglim.slim
   steve8708.Align
   stkb.rewrap
   wmaurer.change-case
+  ziyasal.vscode-open-in-github
 ].each do |ext|
   dep ext, :template => "code_extension"
 end
 
+dep "castwide.solargraph", :template => "code_extension" do
+  requires "solargraph.gem"
+end
+
 dep "rebornix.Ruby", :template => "code_extension" do
   requires "debase.gem"
-  requires "rcodetools.gem"
   requires "rubocop.gem"
   requires "ruby-debug-ide.gem"
 end
 
 dep "debase.gem" do provides nil end
-dep "rcodetools.gem" do provides nil end
 dep "rubocop.gem" do provides nil end
 dep "ruby-debug-ide.gem" do provides nil end
+dep "solargraph.gem" do provides nil end
 
 dep "vscode extensions" do
   extensions.each do |ext|
     requires ext
   end
 
+  requires "castwide.solargraph"
   requires "rebornix.Ruby"
 end
