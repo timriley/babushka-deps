@@ -14,6 +14,7 @@ dep "packages" do
   requires "mas.managed"
   requires "ne.managed"
   requires "ngrok"
+  requires "overmind.managed"
   requires "pgcli.managed"
   requires "pygments.py"
   requires "s3cmd.managed"
@@ -62,6 +63,10 @@ dep "ngrok" do
   }
 end
 
+dep "overmind.managed" do
+  requires "tmux.managed"
+end
+
 dep "pgcli.managed"
 dep "pygments.py"
 
@@ -96,5 +101,6 @@ dep "s3cmd.managed"
 dep "switchaudio-osx.managed" do
   provides "SwitchAudioSource"
 end
+dep "tmux.managed"
 dep "watchman.managed" # recommended for react-native
 dep "wget.managed"
