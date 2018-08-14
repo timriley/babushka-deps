@@ -10,10 +10,11 @@ On a fresh copy of macOS, install Xcode from the Mac App Store, then agree to th
 sudo xcodebuild -license
 ```
 
-Make `/usr/local` writeable:
+Make some writeable `/usr/local` directories:
 
 ```
-sudo chown `whoami`:wheel /usr/local
+sudo mkdir /usr/local/{bin,babushka}
+sudo chown `whoami` /usr/local/{bin,babushka}
 ```
 
 Install Babushka:
