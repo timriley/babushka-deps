@@ -4,7 +4,6 @@ dep "apps" do
 end
 
 dep "mac app store apps" do
-  # Mac App Store apps
   requires "Byword.mas"
   requires "DaisyDisk.mas"
   requires "1Blocker.mas"
