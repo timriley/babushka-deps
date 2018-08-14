@@ -1,8 +1,4 @@
 dep "laptop bootstrapped" do
-  # Install rcm from source first, to get a version with fixes for file names
-  # with spaces (necessary until a version _after_ 1.3.1 is released).
-  requires "rcm.src"
-
   requires "icelab:workstation bootstrapped"
 end
 
