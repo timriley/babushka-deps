@@ -4,17 +4,13 @@ dep "apps" do
 end
 
 dep "mac app store apps" do
-  requires "Byword.mas"
   requires "DaisyDisk.mas"
   requires "1Blocker.mas"
-  requires "Day One.mas"
   requires "Deckset.mas"
   requires "Diptic.mas"
   requires "Divvy.mas"
-  requires "FoldingText.mas"
   requires "HTTP Client.mas"
   requires "iA Writer.mas"
-  requires "iBooks Author.mas"
   requires "iStat Mini.mas"
   requires "Keynote.mas"
   requires "Marked.mas"
@@ -67,6 +63,7 @@ dep "homebrew cask apps" do
   requires "muzzle"
   requires "licecap"
   requires "openemu"
+  requires "paw"
   requires "postico"
   requires "reveal"
   requires "slack"
@@ -119,17 +116,13 @@ meta :mas do
   }
 end
 
-dep("Byword.mas") { id "420212497" }
 dep("DaisyDisk.mas") { id "411643860" }
 dep("1Blocker.mas") { id "1107421413" }
-dep("Day One.mas") { id "1055511498" }
 dep("Deckset.mas") { id "847496013" }
 dep("Diptic.mas") { id "526546615" }
 dep("Divvy.mas") { id "413857545" }
-dep("FoldingText.mas") { id "540003654" }
 dep("HTTP Client.mas") { id "418138339" }
 dep("iA Writer.mas") { id "775737590" }
-dep("iBooks Author.mas") { id "490152466" }
 dep("iStat Mini.mas") { id "927292435" }
 dep("Keynote.mas") { id "409183694" }
 dep("Marked.mas") { id "448925439" }
@@ -183,6 +176,7 @@ cask "launchbar"
 cask "licecap"
 cask "muzzle"
 cask "openemu"
+cask "paw"
 cask "postico"
 cask "reveal"
 cask "slack"
