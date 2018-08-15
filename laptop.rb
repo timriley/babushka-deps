@@ -17,9 +17,6 @@ dep "personal" do
   requires "launchbar actions"
   requires "vscode extensions"
 
-  # Development tools
-  requires "react-native-cli.npm"
-
   # Use fish
   requires "icelab:shell".with :shell_name => "fish"
 end
