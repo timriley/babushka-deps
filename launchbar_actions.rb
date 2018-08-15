@@ -1,5 +1,5 @@
 dep "launchbar actions" do
-  requires "Caffeinate.lbacion"
+  requires "Caffeinate.lbaction"
 end
 
 meta :lbaction do
