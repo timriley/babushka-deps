@@ -28,6 +28,7 @@ dep "mac app store apps" do
   requires "The Unarchiver.mas"
   requires "Things3.mas"
   requires "Tomato One.mas"
+  requires "Trello.mas"
   requires "Tweetbot.mas"
   requires "Ulysses.mas"
   requires "Wunderlist.mas"
@@ -139,6 +140,7 @@ dep("Soulver.mas") { id "413965349" }
 dep("The Unarchiver.mas") { id "425424353" }
 dep("Things3.mas") { id "904280696" }
 dep("Tomato One.mas") { id "907364780" }
+dep("Trello.mas") { id "1278508951" }
 dep("Tweetbot.mas") { id "557168941" }
 dep("Ulysses.mas") { id "623795237" }
 dep("Wunderlist.mas") { id "410628904" }
