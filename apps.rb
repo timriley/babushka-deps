@@ -117,8 +117,8 @@ meta :mas do
   }
 end
 
-dep("DaisyDisk.mas") { id "411643860" }
 dep("1Blocker.mas") { id "1107421413" }
+dep("DaisyDisk.mas") { id "411643860" }
 dep("Deckset.mas") { id "847496013" }
 dep("Diptic.mas") { id "526546615" }
 dep("Divvy.mas") { id "413857545" }
