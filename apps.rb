@@ -39,6 +39,7 @@ end
 dep "homebrew cask apps" do
   requires "1password"
   requires "atext"
+  requires "backblaze"
   requires "caffeine"
   requires "charles"
   requires "dash"
@@ -151,6 +152,7 @@ def cask(name); dep name, :template => "icelab:cask"; end # Avoid repitition bel
 
 cask "1password"
 cask "atext"
+cask "backblaze"
 cask "caffeine"
 cask "charles"
 cask "dash"
