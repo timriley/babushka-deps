@@ -15,23 +15,30 @@ meta :code_extension do
 end
 
 extensions = %w[
+  brandoncc.vscode-seeing-is-believing
   brofox86.theme-espresso-soda-light
   donjayamanne.githistory
   doublefint.pgsql
   eamodio.gitlens
   esbenp.prettier-vscode
+  fayras.simple-new-file
+  GitHub.vscode-pull-request-github
   HookyQR.beautify
   IBM.output-colorizer
   jakelucas.code-file-nav
   karunamurti.haml
   keyring.Lua
+  lunaryorn.fish-ide
   mdickin.markdown-shortcuts
-  miguel-savignano.ruby-symbols
   ow.vscode-subword-navigation
   PeterJausovec.vscode-docker
+  rebornix.ruby
+  RomanPeshkov.vscode-text-tables
   sianglim.slim
+  skyapps.fish-vscode
   steve8708.Align
   stkb.rewrap
+  tonsky.theme-alabaster
   wmaurer.change-case
   ziyasal.vscode-open-in-github
 ].each do |ext|
@@ -42,22 +49,10 @@ dep "castwide.solargraph", :template => "code_extension" do
   requires "solargraph.gem"
 end
 
-dep "rebornix.Ruby", :template => "code_extension" do
-  requires "debase.gem"
-  requires "rubocop.gem"
-  requires "ruby-debug-ide.gem"
-end
-
-dep "debase.gem" do provides nil end
-dep "rubocop.gem" do provides nil end
-dep "ruby-debug-ide.gem" do provides nil end
-dep "solargraph.gem" do provides nil end
-
 dep "vscode extensions" do
   extensions.each do |ext|
     requires ext
   end
 
   requires "castwide.solargraph"
-  requires "rebornix.Ruby"
 end
