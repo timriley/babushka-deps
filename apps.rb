@@ -6,7 +6,6 @@ end
 dep "mac app store apps" do
   requires "DaisyDisk.mas"
   requires "1Blocker.mas"
-  requires "Deckset.mas"
   requires "Diptic.mas"
   requires "Divvy.mas"
   requires "HTTP Client.mas"
@@ -43,6 +42,7 @@ dep "homebrew cask apps" do
   requires "caffeine"
   requires "charles"
   requires "dash"
+  requires "deckset"
   requires "doxie"
   requires "dropbox"
   requires "firefox"
@@ -122,7 +122,6 @@ end
 
 dep("1Blocker.mas") { id "1107421413" }
 dep("DaisyDisk.mas") { id "411643860" }
-dep("Deckset.mas") { id "847496013" }
 dep("Diptic.mas") { id "526546615" }
 dep("Divvy.mas") { id "413857545" }
 dep("HTTP Client.mas") { id "418138339" }
@@ -160,6 +159,7 @@ cask "backblaze"
 cask "caffeine"
 cask "charles"
 cask "dash"
+cask "deckset"
 cask "doxie"
 cask "dropbox"
 cask "firefox"
