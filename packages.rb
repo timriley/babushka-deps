@@ -2,7 +2,10 @@ dep "packages" do
   requires "ack.managed"
   requires "awscli.managed"
   requires "cloc.managed"
+  requires "duply.managed"
+  requires "ffmpeg.managed"
   requires "fish.managed"
+  requires "freetds.managed"
   requires "graphviz.managed"
   requires "httpie.managed"
   requires "hub.managed"
@@ -23,7 +26,12 @@ dep "awscli.managed" do
   provides "aws"
 end
 dep "cloc.managed"
+dep "duply.managed"
+dep "ffmpeg.managed"
 dep "fish.managed"
+dep "freetds.managed" do
+  provides "tsql"
+end
 dep "graphviz.managed" do
   provides "dot"
 end
