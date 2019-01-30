@@ -50,6 +50,7 @@ babushka "laptop"
 - [ ] Remap caps lock key to control via Keyboard Preferences
 - [ ] Set "Full Keyboard Access: All Controls" via Keyboard Preferences (Shortcuts tab)
 - [ ] Disable the guest user
+- [ ] [Allow Backblaze to run on Mojave](https://help.backblaze.com/hc/en-us/articles/360009644134-Upgrading-to-Mojave-Read-This-First-)
 - [ ] Open LaunchBar and step through the first-run screens
 - [ ] Copy `~/Library/Preferences/com.mizage.Divvy.plist`
 - [ ] Allow Divvy to control the computer in Security & Privacy Preferences (Privacy tab, Accessibility section)
@@ -59,3 +60,6 @@ babushka "laptop"
 - [ ] Copy `~/src`
 - [ ] Copy `~/.gnupg`
 - [ ] Copy fonts
+- [ ] Copy aText snippets
+- [ ] Copy Hazel rules
+
