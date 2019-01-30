@@ -73,8 +73,9 @@ dep "homebrew cask apps" do
   requires "postgres"
   requires "postico"
   requires "reveal"
-  requires "slack"
   requires "skype"
+  requires "slack"
+
   requires "sublime-merge"
   requires "superduper"
   requires "tokens"
@@ -193,8 +194,8 @@ cask "paw"
 cask "postgres"
 cask "postico"
 cask "reveal"
-cask "slack"
 cask "skype"
+cask "slack"
 dep "sublime-merge.cask", :template => "icelab:cask" do
   installs "sublime-merge"
 end
