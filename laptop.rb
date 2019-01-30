@@ -14,6 +14,7 @@ dep "personal" do
   requires "macos configured"
   requires "packages"
   requires "apps"
+  requires "hammerspoon spoons"
   requires "launchbar actions"
   requires "vscode extensions"
 
