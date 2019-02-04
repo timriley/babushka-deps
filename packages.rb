@@ -15,6 +15,7 @@ dep "packages" do
   requires "ngrok"
   requires "overmind.managed"
   requires "pgcli.managed"
+  requires "pinentry-mac.managed"
   requires "pygments.py"
   requires "s3cmd.managed"
   requires "wget.managed"
@@ -62,6 +63,7 @@ dep "overmind.managed" do
 end
 
 dep "pgcli.managed"
+dep "pinentry-mac.managed" # for gpg-agent passphrase prompts
 dep "pygments.py"
 dep "s3cmd.managed"
 dep "tmux.managed"
