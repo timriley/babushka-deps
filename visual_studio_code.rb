@@ -17,6 +17,7 @@ end
 extensions = %w[
   brandoncc.vscode-seeing-is-believing
   brofox86.theme-espresso-soda-light
+  castwide.solargraph
   donjayamanne.githistory
   doublefint.pgsql
   eamodio.gitlens
@@ -36,7 +37,6 @@ extensions = %w[
   RomanPeshkov.vscode-text-tables
   sianglim.slim
   skyapps.fish-vscode
-  steve8708.Align
   stkb.rewrap
   tonsky.theme-alabaster
   wmaurer.change-case
@@ -45,14 +45,8 @@ extensions = %w[
   dep ext, :template => "code_extension"
 end
 
-dep "castwide.solargraph", :template => "code_extension" do
-  requires "solargraph.gem"
-end
-
 dep "vscode extensions" do
   extensions.each do |ext|
     requires ext
   end
-
-  requires "castwide.solargraph"
 end
